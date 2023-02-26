@@ -1,0 +1,12 @@
+//write a function that takes an array of objects, where each objects has a 'name' and 'age' property, and logs the name and age of each object to the console.
+
+function logNameAndAges(people){
+    people.forEach(person => console.log(person.name+" is "+person.age+ " years old"));
+}
+
+const people =[
+    {name: "jay", age:21},
+    {name: "Deep", age:22},
+    {name: "Jaydeep", age:23},
+    ];
+logNameAndAges(people);
