@@ -1,0 +1,15 @@
+//Write a function that takes an array of numbers and returns the largest number in the array.
+
+function findLargeNum(numbers){
+  let largestNumber = numbers[0];
+  for(let i=1;i<numbers.length;i++){
+    if(numbers[i] > largestNumber){
+      largestNumber = numbers[i];
+    }
+  }
+  return largestNumber;
+}
+
+const numbers =[ 3,5,2,6,8];
+const largestNumber = findLargeNum(numbers);
+console.log('the largestNumber is: ', largestNumber);
