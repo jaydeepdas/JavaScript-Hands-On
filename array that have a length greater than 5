@@ -1,0 +1,15 @@
+// Write a function that takes an array of strings and returns a new array with all that have a length greater than 5.
+
+function removeDuplicates(arr){
+    return [...new Set(arr)];
+}
+const nums=[1,4,4,5,2,4,2,8,9,5,6];
+const uniquenums =removeDuplicates(nums);
+console.log(uniquenums);
+
+function filterlongStrings(arr){
+    return arr.filter(str => str.length >5);
+}
+const inputArr =["Apple","Mango","orange","grapefruit"];
+const outputArr = filterlongStrings(inputArr);
+console.log('outputArr is:' ,outputArr);
